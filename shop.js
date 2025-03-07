@@ -1,5 +1,3 @@
-
-
 const karzinka = document.querySelector(".karzinka_container");
 karzinka.style.display = "none"
 const bosh = document.querySelector(".bosh");

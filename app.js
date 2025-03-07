@@ -116,3 +116,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+const barsBtn = document.querySelector(".barsBtn");
+const list = document.querySelector(".a");
+
+function chiq() {
+    if (list.style.marginTop === "-200px") {
+        list.style.marginTop = "0px"
+        
+    } else {
+        list.style.marginTop = "-200px"
+    }
+}

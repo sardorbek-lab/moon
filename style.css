@@ -8,7 +8,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "Inter", serif;
-    
+
 }
 
 header {
@@ -1140,11 +1140,13 @@ footer .footerend p {
     border-radius: 13px;
     padding: 15px;
 }
-.sh2 .cards{
+
+.sh2 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
+
 .sh2 .cards .card2 {
     height: auto;
     width: 330px;
@@ -1154,7 +1156,7 @@ footer .footerend p {
     justify-content: start;
     border-radius: 10px;
     gap: 5px;
-    
+
 }
 
 .sh2 .cards .card2 img {
@@ -1165,11 +1167,11 @@ footer .footerend p {
 }
 
 
-.karzinka_container{
+.karzinka_container {
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    position: fixed ;
+    position: fixed;
     z-index: 1;
     overflow: hidden;
 }
@@ -1195,11 +1197,13 @@ footer .footerend p {
     font-weight: 500;
     color: #333;
 }
+
 .karzinka .card2 .price {
     font-size: 16px;
     font-weight: bold;
     color: #000;
 }
+
 .karzinka .card2 .remove {
     display: flex;
     align-items: center;
@@ -1213,3 +1217,181 @@ footer .footerend p {
     cursor: pointer;
 }
 
+
+
+
+@media (max-width: 600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+    .dic{
+        padding: 0px;
+    }
+    .up{
+        padding: 50px 0px 0px 0px;
+    }
+    .home{
+        padding: 50px 0px 0px 0px;
+    }
+    .best{
+        padding: 50px 0px 0px 0px;
+    }
+    .made{
+        padding: 50px 0px 0px 0px;
+    }
+    .home .cards,
+    .best .cards,
+    .dic .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .best .card,
+    .dic .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .made {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .made .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .made .card .text {
+        order: 1;
+        width: 99%;
+    }
+
+    .made .card img {
+        order: 2;
+        width: 99%;
+    }
+
+    .up .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .card {
+        position: relative;
+        top: 88vh;
+        width: 100%;
+        margin-bottom: 500px;
+        left: -90px;
+    }
+
+    .container {
+        margin-bottom: 88vh;
+    }
+
+    header .alar .a {
+        margin-top: -200px;
+    }
+
+}
+header .alar .barsBtn {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    header .alar .barsBtn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+    header .alar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    header .alar .a{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 6px;
+        transition: all 0.7s;   
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    footer {
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    footer .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .cards .card {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    footer .cards .card p{
+        width: 300px;
+    }
+    footer .cards .card button {
+        width: 200px;
+    }
+
+    footer .cards .line {
+        width: 530px;
+        height: 0.4px;
+    }
+    footer .cards .card2 {
+        margin-left: -120px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    footer .cards .card2 .card1 {
+        text-align: left;
+    }
+
+    footer .footerend .line {
+        width: 90%;
+    }
+
+    footer .footerend {
+        text-align: center;
+        margin-top: 70px;
+    }
+}
